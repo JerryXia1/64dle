@@ -1,7 +1,7 @@
-# Sedordle
+# 64dle
 
 <https://sedordle.com/>
 
-Put your skills to the test and solve sixteen Wordles at once! You have 21 guesses to solve all sixteen words.
+Put your skills to the test and solve sixty-four Wordles at once! You have 84 guesses to solve all sixty-four words.
 
-A new Sedordle available each day to solve.
+A new 64dle available each day to solve.
