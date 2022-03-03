@@ -110,7 +110,7 @@ export default function GameBoard({ gameMode, correctGuessCount, setCorrectGuess
     const date = new Date().toJSON().slice(0, 10).replace(/-/g, '');
     const seededRandom = Math.seed(parseInt(date, 10));
 
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 64; i++) {
       selected.push(TARGET_WORDS[Math.floor(seededRandom() * TARGET_WORDS.length)]);
     }
 
@@ -144,8 +144,8 @@ export default function GameBoard({ gameMode, correctGuessCount, setCorrectGuess
       }
     }
     setCorrectGuessCount(correct);
-    setHasWonGame(correct === 16);
-    setHasFinishedGame(correct === 16 || guessedWords.length === 21);
+    setHasWonGame(correct === 64);
+    setHasFinishedGame(correct === 64 || guessedWords.length === 21);
   }, [guessedWords, targetWords, setCorrectGuessCount]);
 
   useEffect(() => {
@@ -223,7 +223,7 @@ export default function GameBoard({ gameMode, correctGuessCount, setCorrectGuess
                 You guessed
                 {' '}
                 {correctGuessCount}
-                /16 words correctly
+                /64 words correctly
               </Text>
               {hasWonGame === false && (
                 <Text>
