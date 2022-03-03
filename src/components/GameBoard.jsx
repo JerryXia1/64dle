@@ -145,7 +145,7 @@ export default function GameBoard({ gameMode, correctGuessCount, setCorrectGuess
     }
     setCorrectGuessCount(correct);
     setHasWonGame(correct === 64);
-    setHasFinishedGame(correct === 64 || guessedWords.length === 21);
+    setHasFinishedGame(correct === 64 || guessedWords.length === 84);
   }, [guessedWords, targetWords, setCorrectGuessCount]);
 
   useEffect(() => {
